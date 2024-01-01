@@ -1,0 +1,26 @@
+https://leetcode.com/problems/sort-colors/
+
+
+
+class Solution:
+    def sortColors(self, nums: List[int]) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        f=0
+        l=[]
+        for i in nums:
+            if i == 0:
+                l.insert(0,i)
+                f=f+1
+            elif i==1:
+                l.insert(f,i)
+            else:
+                l.append(i)
+        nums=l
+        
+ 
+
+
+            
+
